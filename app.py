@@ -10,7 +10,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-
 # Route handler for GET /restaurants
 @app.route('/restaurants', methods=['GET'])
 def get_restaurants():
